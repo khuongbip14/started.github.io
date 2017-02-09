@@ -257,23 +257,25 @@ S-feedback: form , submit to mail;
 S-INFO.CONTACT: info to contact, google map;
 ***********************************/
 
-/*--- INFO to contact ---*/
+/*--- INFO to contact :info shadow to css---*/
 
-.s-map {
-  background-size: cover;
+.info-contact {
   position: relative;
-  float: left;
+  width:100%;
+  background-size:cover;
+}
+.info-contact iframe {
+  width: 100%;
 }
 .info-shadow {
-  width: 20%;
-  float: left;
+  position: absolute;
+  width: 300px;
   text-align: left;
-  padding-bottom: 5%;
-  margin: 0 auto;
+  padding:0 3%;
+  top: 0;
+  left: 0;
   background: #fff;
   box-shadow: 10px 10px 5px #888888;
-  position: absolute;
-
 }
 .info-shadow h2 {
   font-weight: bold;
@@ -290,17 +292,15 @@ S-INFO.CONTACT: info to contact, google map;
   color:black;
 }
 .info-shadow a {
-  
   color: black;
 }
 .info-shadow a:hover {
   color: #facd12;
+}
 
-}
-.s-map iframe {
-  width: 100%;
-  
-}
+
+
+
 /**********************************
 FOOTER
 ***********************************/
